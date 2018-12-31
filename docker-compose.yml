@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: postgres:11
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+      - ./db/scripts:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_USER=portfolio
+      - POSTGRES_PASSWORD=fe5ur2kpfoHzEtJ8
+      - POSTGRES_DB=portfolio
