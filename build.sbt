@@ -1,5 +1,7 @@
 name := "finatra-rest"
 
+enablePlugins(JavaAppPackaging)
+
 version := "0.1"
 
 scalaVersion := "2.12.8"
@@ -19,7 +21,7 @@ libraryDependencies ++= Seq(
 
   "com.typesafe" % "config" % "1.3.2",
 
-  "com.fasterxml.jackson.datatype" % "jackson-datatype-jsr310" % "2.9.8",
+  "com.fasterxml.jackson.datatype" % "jackson-datatype-jsr310" % "2.9.6",
 
   "ch.qos.logback" % "logback-classic" % "1.2.3",
 

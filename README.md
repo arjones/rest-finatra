@@ -9,7 +9,13 @@ A learning experiment using:
 ## Usage
 
 ```bash
-docker-compose up
+# Run postgres
+docker-compose up -d
+
+# Build, Package & Run
+sbt clean stage
+cd target/universal/stage/
+bin/finatra-rest
 ```
 
 ```bash
