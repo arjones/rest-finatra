@@ -7,7 +7,7 @@ case class IdRequest(@RouteParam id: Long, request: Request)
 
 /**
   * Allow named requests being processed as comma-separated values
-  * @param name
+  * @param name names separated by comma, ie: IBM,MSFT,GOOG
   * @param request
   */
 case class NameRequest(@RouteParam name: String, request: Request) {

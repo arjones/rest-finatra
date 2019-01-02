@@ -12,7 +12,7 @@ object ServerMain extends Server
 
 class Server extends HttpServer {
 
-  override val name = "finatra-api"
+  override val name = "rest-finatra"
 
   override def jacksonModule = CustomJacksonModule
 

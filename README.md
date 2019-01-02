@@ -4,7 +4,6 @@ A learning experiment using:
 * Scala
 * Finatra
 * Postgres
-* React (?)
 
 ## Usage
 
@@ -15,13 +14,14 @@ docker-compose up -d
 # Build, Package & Run
 sbt clean stage
 cd target/universal/stage/
-bin/finatra-rest
+bin/rest-finatra
 ```
 
 ```bash
 curl 0.0.0.0:8888/v1/assets | jq .
 
 curl 0.0.0.0:8888/v1/assets/GOOG | jq .
+curl 0.0.0.0:8888/v1/assets/ORCL,AAPL,IBM | jq .
 ```
 
 ## References / Learning material

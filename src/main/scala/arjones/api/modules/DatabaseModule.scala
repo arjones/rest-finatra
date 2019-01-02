@@ -20,7 +20,5 @@ object DatabaseModule extends TwitterModule {
     .database(config.getString("db.database"))
     .withBinaryResults(true)
     .withBinaryParams(true)
-    //    .withSessionPool.maxSize(1)
-    //    .withTransport.tls("host")
     .newRichClient(config.getString("db.hostname"))
 }

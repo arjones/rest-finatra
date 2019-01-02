@@ -1,4 +1,4 @@
-name := "finatra-rest"
+name := "rest-finatra"
 
 enablePlugins(JavaAppPackaging)
 

@@ -14,6 +14,5 @@ class PortfolioController @Inject()(repo: PortfolioRepository) extends Controlle
 
     get("/assets/:name") { req: NameRequest => repo.findByNameList(req.names) }
 
-    //    get("/assets/:id") { req: IdRequest => repo.findById(req.id) }
   }
 }
